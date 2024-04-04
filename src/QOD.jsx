@@ -7,24 +7,24 @@ export default function () {
     const questions = [{
                 type: "radiogroup",
                 name: "question1",
-                title: "What is the most common cause of lifeguard injuries?",
+                title: "What is the recommended posture for sitting while playing video games?",
                 choices: [
-                    "Slip and fall accidents", "Pool chemicals", "Sunburns", "Sharks"
+                    "Slouched with legs crossed", "Leaning forward with hunched shoulders", "Sitting upright with feet flat on the floor and back supported", "Lying down on the couch"
                 ],
-                correctAnswer: "Slip and fall accidents"
+                correctAnswer: "Sitting upright with feet flat on the floor and back supported"
             },
             {
                 type: "radiogroup",
                 name: "question2",
-                title: "How much sunscreen should you apply?",
+                title: "How often should you take breaks while playing video games?",
                 choices: [
-                    "teaspoon", "tablespoon", "quart", "gallon"
+                    "Every hour", "Every four hours", "Only when you feel tired", "Never, breaks interrupt the gaming experience"
                 ],
-                correctAnswer: "tablespoon"
+                correctAnswer: "Every hour"
             }];
     const nQuestion = Math.floor((Math.random() * questions.length));
     const surveyJson = {
-        title: "Lifeguard Safety",
+        title: "Proper Gaming Ergonomics",
         showCorrectAnswer: "always",
         showProgressBar: "bottom",
         firstPageIsStarted: true,
@@ -32,7 +32,7 @@ export default function () {
         pages: [{
             elements: [{
                 type: "html",
-                html: "You are about to start a quiz on Lifeguard Safety. <br>You will have 30 seconds for every question and 60 seconds to end the quiz.<br>Enter your name below and click <b>Start Quiz</b> to begin."
+                html: "You are about to start a quiz on Proper Gaming Ergonomics. <br>You will have 30 seconds for every question and 60 seconds to end the quiz.<br>Enter your name below and click <b>Start Quiz</b> to begin."
             }, {
                 type: "text",
                 name: "username",
